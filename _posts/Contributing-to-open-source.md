@@ -23,12 +23,15 @@ Review and update project documentation, fix typos, clarify instructions, or add
 
 When you browse your favorite open source project documentation, you will most probably find things that you don't understand at first, instructions that don't work out of the box, etc. You can help a lot just by saying how things would have been easier for you, provide clear alternatives, explaining things the way you would have liked they were explained to you.
 
-In [this case](https://github.com/jpos/jPOS/pull/467) I documented a feature that wasn't in the documentation, all I had to do is traverse the source files, extract the examples and add some explanations. It's an awesome way to learn and understand the code.
+In [this case](https://github.com/jpos/jPOS/pull/467) I documented a feature missing from the documentation,
+all I had to do is traverse the source files,
+extract the examples and add some explanations.
+It's an awesome way to learn and understand the code.
 
 ## 2. Bug Reporting. <a id="bug-reporting" /> 
 When you use the project's software, you will probably find bugs. Report them on the project's issue tracker. Include clear steps to reproduce the problems and any relevant details.
 
-Some months ago, while working on a gradle project I created using the recommended steps,
+Some months ago, while working on a Gradle project I created using the recommended steps,
 I found out that the gradle bash completion was not working for projects created using those steps.
 In [this issue](https://github.com/gradle/gradle-completion/issues/137) I reported that,
 specifying how to reproduce the problem.
@@ -138,7 +141,7 @@ with a proof of concept implementation and usage example.
 
 Contribute to the project's design and user experience by suggesting visual improvements, creating mockups, or providing UI/UX feedback.
 
-Since I don't do much of UI/UX, I couldn't find a personal story to share here,
+Since I do almost nothing of UI/UX, I couldn't find a personal story to share here,
 but if you are a more visual person, then you most certainly can suggest visual improvements.
 Also, UX is not only about visual aspects, you can propose workflow enhancements as well.
 
@@ -146,11 +149,11 @@ Also, UX is not only about visual aspects, you can propose workflow enhancements
 
 If you like the project, who better than you for talking about all the goodness it has. Help promote the project by writing blog posts, sharing your success stories, or presenting at conferences or meetups. Spread awareness and encourage others to use and contribute to the open source project.
 
-Well, in this same post, I have spread the word about some of the projects I like and use,
-it's not a perfect example since it was not the main subject of it, but who says we can't do many things at once?
+Well, in this same post, I have spread the word about some of the projects I like and use.
+This isn't a perfect example since the projects are not the main subject, but who says we can't do many things at once?
 
 So, if you are still here, thank you for reading,
-and I hope you feel more comfortable about contributing, and that you will be doing so soon enough.
+and I hope you feel more comfortable about contributing, and that you will be doing it soon enough.
 
 If you want to reach out, just head over to [<img src="../img/linkedin.svg" width="16" style="vertical-align:middle">/andresalcarraz](https://linkedin.com/in/andresalcarraz) or [<img src="../img/twitter.svg" width="16" style="vertical-align:middle">/andresalcarraz](https://twitter.com/andresalcarraz).
 
