@@ -1,0 +1,6 @@
+css: github-markdown.css
+template: custom_template.html
+#toc: true
+#number-sections: true
+self-contained: true
+#shift-heading-level-by: -1
