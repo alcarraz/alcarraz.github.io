@@ -210,11 +210,11 @@ To test the debug configuration, we are going to set a breakpoint in jPOS code, 
 
 1. Open the `SystemMonitor` class, by clicking on the **Navigate** menu, and selecting the **Class** item. Start typing `SystemMonitor` until you can select `org.jpos.q2.qbean.SystemMonitor`.
 2. Set a breakpoint in the `startService` method.
-3.  Start the run configuration in debug mode by clicking on the green bug button, make sure the just created run configuration is selected in the run combo: ![start debug](start-debug.png)
+3.  Start the run configuration in debug mode by clicking on the green bug button, make sure the just created run configuration is selected in the run combo: ![start debug](/img/start-debug.png)
 
 The debugger should stop at that method, and that’s it. Happy debugging.
  
-If you'd like me to cover other jPOS related stuff, let me know, you can contact me at [<img src=/img/linkedin.svg" width="16" style="vertical-align:middle">/andresalcarraz](https://linkedin.com/in/andresalcarraz) or [<img src=/img/twitter.svg" width="16" style="vertical-align:middle">/andresalcarraz](https://twitter.com/andresalcarraz).
+If you'd like me to cover other jPOS related stuff, let me know, you can contact me at [<img src="/img/linkedin.svg" width="16" style="vertical-align:middle">/andresalcarraz](https://linkedin.com/in/andresalcarraz) or [<img src="/img/twitter.svg" width="16" style="vertical-align:middle">/andresalcarraz](https://twitter.com/andresalcarraz).
 
 Head over to [jPOS tutorials](http://www.jpos.org/tutorials) for awesome tutorials from which you can experiment (and debug).
 
