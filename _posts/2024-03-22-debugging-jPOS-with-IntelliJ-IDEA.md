@@ -130,7 +130,7 @@ build
 : Dependencies jars.
 
 ## Create the debug configuration.
-<img src="new-run-debug-configuration.png" alt="new run/debug configuration" style="width: 20em;float: right; margin-left: 10px; " /> 
+<img src="/img/new-run-debug-configuration.png" alt="new run/debug configuration" style="width: 20em;float: right; margin-left: 10px; " /> 
 To create a new debug configuration you need to perform these 3 steps, then, follow the steps for the debug way of your choice, or all three if you like.
 
 Each way has its own pros and cons, the best for you will depend on your taste and/or the project structure.
@@ -154,7 +154,7 @@ That's it, this will launch the application in debug mode, and create the debug 
 ### Java application debug configuration.
 This is the configuration more complicated to set up, but is also always work, or at least the one covering most scenarios.
 
-<img src="app-debug-configuration.png" alt="app debug configuration" style="width: 20em;float: right; margin-left: 10px; "/>
+<img src="/img/app-debug-configuration.png" alt="app debug configuration" style="width: 20em;float: right; margin-left: 10px; "/>
 
 1. Select **Application** in the *Add New Configuration* dropdown.
 2. In **Name**, enter something you like, for example, `jPOS debug`.
@@ -214,7 +214,7 @@ To test the debug configuration, we are going to set a breakpoint in jPOS code, 
 
 The debugger should stop at that method, and that’s it. Happy debugging.
  
-If you'd like me to cover other jPOS related stuff, let me know, you can contact me at [<img src="../img/linkedin.svg" width="16" style="vertical-align:middle">/andresalcarraz](https://linkedin.com/in/andresalcarraz) or [<img src="../img/twitter.svg" width="16" style="vertical-align:middle">/andresalcarraz](https://twitter.com/andresalcarraz).
+If you'd like me to cover other jPOS related stuff, let me know, you can contact me at [<img src=/img/linkedin.svg" width="16" style="vertical-align:middle">/andresalcarraz](https://linkedin.com/in/andresalcarraz) or [<img src=/img/twitter.svg" width="16" style="vertical-align:middle">/andresalcarraz](https://twitter.com/andresalcarraz).
 
 Head over to [jPOS tutorials](http://www.jpos.org/tutorials) for awesome tutorials from which you can experiment (and debug).
 
