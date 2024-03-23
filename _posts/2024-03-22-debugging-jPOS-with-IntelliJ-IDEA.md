@@ -162,9 +162,9 @@ This is the configuration more complicated to set up, but is also always work, o
 4. In **Main class**, enter `org.jpos.q2.Q2`
 5. In **Working directory** enter `build/install/jPOS-template`
 6. Click on **Modify options** and mark the **Add before launch task** option.
-7. Click the plus sign next to **Build**: ![before launch task](before-launch.png)
+7. Click the plus sign next to **Build**: ![before launch task](/img/before-launch.png)
 8. Select **Run Gradle task**, this is so that the `install` directory is updated with modifications made on the `dist` directory, before every run. 
-     1. In **Gradle project**, click on the folder button (![folder icon](folder-icon.png)), and select **jPOS-template**, i.e., the name of the Gradle project. 
+     1. In **Gradle project**, click on the folder button (![folder icon](/img/folder-icon.png)), and select **jPOS-template**, i.e., the name of the Gradle project. 
      2. In **Tasks**, enter `installApp`
      3. Click the **OK** button 
    
