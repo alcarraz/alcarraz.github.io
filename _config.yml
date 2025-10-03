@@ -8,3 +8,22 @@ google_analytics: G-29VKRNWX58
 title: Andrés Alcarraz
 
 photo: /img/andres.png
+
+plugins:
+  - jekyll-remote-theme
+
+# _config.yml
+defaults:
+  - scope:
+      path: "" # An empty string indicates all files
+    values:
+      layout: "default" # Sets 'default' as the layout for all files
+#  - scope:
+#      path: "_posts"
+#      type: "posts"
+#    values:
+#      layout: "post" # Sets 'post' as the layout for all posts
+#  - scope:
+#      path: "my-specific-folder"
+#    values:
+#      layout: "custom-layout" # Sets 'custom-layout' for files in 'my-specific-folder'
