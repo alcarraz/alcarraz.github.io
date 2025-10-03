@@ -1,6 +1,6 @@
 <!doctype html>
-<html lang="{{ site.lang | default: "en-US" }}">
-<head>
+<html lang='{{ site.lang | default: "en-US" }}'>
+<head title="{{ site.title }}">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -40,6 +40,18 @@
     <section>
 
         {{ content }}
+
+        {% if page.url == "/" %}
+        <h2>Blog Posts</h2>
+        <ul>
+          {% for post in site.posts %}
+            <li>
+              <a href="{{ post.url }}">{{ post.title }}</a>
+              <span> - {{ post.date | date: "%B %d, %Y" }}</span>
+            </li>
+          {% endfor %}
+        </ul>
+        {% endif %}
 
     </section>
 </div>
