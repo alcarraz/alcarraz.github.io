@@ -3,6 +3,7 @@
 /* Wrapper styling */
 .wrapper {
   box-shadow: rgba(0, 0, 0, 0.2) 0 0 0 1px, rgba(0, 0, 0, 0.45) 0 3px 10px;
+  width: 80%;
 }
 
 /* Header styling */
@@ -52,18 +53,23 @@ li pre {
 }
 
 /* Directory tree code blocks - reduce vertical spacing */
-code.language-dirtree {
-  line-height: 1.2 !important;
-  font-size: 11px !important;
-}
-
-pre:has(code.language-dirtree) {
-  line-height: 1.2 !important;
-  font-size: 11px !important;
-}
-
-/* For browsers that don't support :has() */
+code.language-dirtree, pre:has(code.language-dirtree),
+  /* For browsers that don't support :has() */
 pre code.language-dirtree {
-  line-height: 1.2 !important;
-  font-size: 11px !important;
+  line-height: 1.1 !important;
+}
+
+@media print, screen and (max-width: 925px) {
+  .wrapper {
+    border-radius: 8px;
+    width: 740px;
+  }
+}
+
+
+@media print, screen and (max-width: 740px) {
+  .wrapper {
+    /*border-radius: 0px;*/
+    width: 100%
+  }
 }
