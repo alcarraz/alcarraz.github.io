@@ -1,0 +1,132 @@
+/* Auto Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #0d1117 none !important;
+    color: #c9d1d9 !important;
+  }
+
+  .wrapper {
+    background: #0d1117 none !important;
+  }
+
+  header {
+    background: #1a2332 none !important;
+    border-bottom: 1px solid #30363d !important;
+  }
+
+  header h1 {
+    color: #f0f6fc !important;
+    font-weight: 600 !important;
+  }
+
+  header p {
+    color: #c9d1d9 !important;
+  }
+
+  header a {
+    color: #58a6ff !important;
+  }
+
+  header a:hover {
+    color: #79c0ff !important;
+  }
+
+  section {
+    background: #0d1117 none !important;
+    color: #c9d1d9 !important;
+  }
+
+  section h1, section h2, section h3, section h4, section h5, section h6 {
+    color: #f0f6fc !important;
+    border-bottom-color: #30363d !important;
+    font-weight: 600 !important;
+  }
+
+  section p {
+    color: #e6edf3 !important;
+  }
+
+  section li {
+    color: #e6edf3 !important;
+  }
+
+  section span {
+    color: #e6edf3 !important;
+  }
+
+  section a {
+    color: #58a6ff !important;
+  }
+
+  section a:hover {
+    color: #79c0ff !important;
+  }
+
+  section strong, section b {
+    color: #f0f6fc !important;
+    font-weight: 600 !important;
+  }
+
+  section em, section i {
+    color: #e6edf3 !important;
+  }
+
+  footer {
+    background-color: #161b22 !important;
+    border-top: 1px solid #30363d !important;
+    color: #8b949e !important;
+  }
+
+  footer p {
+    color: #8b949e !important;
+  }
+
+  footer a {
+    color: #58a6ff !important;
+  }
+
+  footer a:hover {
+    color: #79c0ff !important;
+  }
+
+  code {
+    background-color: #161b22 !important;
+    color: #f0883e !important;
+    border: 1px solid #30363d !important;
+  }
+
+  pre {
+    background-color: #161b22 !important;
+    color: #c9d1d9 !important;
+    border: 1px solid #30363d !important;
+  }
+
+  pre code {
+    color: #c9d1d9 !important;
+  }
+
+  blockquote {
+    color: #8b949e !important;
+    border-left-color: #30363d !important;
+  }
+
+  table {
+    border-color: #30363d !important;
+  }
+
+  table th {
+    background-color: #161b22 !important;
+    color: #c9d1d9 !important;
+    border-color: #30363d !important;
+  }
+
+  table td {
+    background-color: #0d1117 !important;
+    color: #c9d1d9 !important;
+    border-color: #30363d !important;
+  }
+
+  hr {
+    border-color: #30363d !important;
+  }
+}
