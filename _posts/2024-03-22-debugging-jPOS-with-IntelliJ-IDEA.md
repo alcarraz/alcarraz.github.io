@@ -44,7 +44,7 @@ but let me know if you would like to see one tutorial about that, and I'll consi
     git clone https://github.com/jpos/jPOS-template.git
     ```
    You should have this directory structure:
-   ```
+   ```dirtree
    jPOS-template
    ├── bin
    │   ├── q2
@@ -92,7 +92,7 @@ The recommended way to build this application for distribution or for local exec
 ./gradlew installApp
 ```
 If you do that, you will have the following directory structure under the `build` directory:
-```
+```dirtree
 build
 ├── install
 │   └── jPOS-template                           <1>

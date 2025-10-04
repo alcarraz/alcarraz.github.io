@@ -1,0 +1,69 @@
+/* Custom styles - layout and typography (theme-independent) */
+
+/* Wrapper styling */
+.wrapper {
+  box-shadow: rgba(0, 0, 0, 0.2) 0 0 0 1px, rgba(0, 0, 0, 0.45) 0 3px 10px;
+}
+
+/* Header styling */
+header {
+  border-radius: 8px 8px 0 0;
+}
+
+header h1 {
+  font-weight: 600;
+}
+
+/* Section heading styling */
+section h1, section h2, section h3, section h4, section h5, section h6 {
+  font-weight: 600;
+}
+
+section strong, section b {
+  font-weight: 600;
+}
+
+/* Code block styling */
+code {
+  padding: 3px 6px;
+  border-radius: 6px;
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+}
+
+pre {
+  border-radius: 6px;
+  padding: 16px;
+  margin: 0 0 20px;
+  overflow-x: auto;
+  white-space: pre;
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+pre code {
+  padding: 0;
+  font-size: inherit;
+}
+
+li pre {
+  margin-left: 0;
+  padding-left: 16px;
+}
+
+/* Directory tree code blocks - reduce vertical spacing */
+code.language-dirtree {
+  line-height: 1.2 !important;
+  font-size: 11px !important;
+}
+
+pre:has(code.language-dirtree) {
+  line-height: 1.2 !important;
+  font-size: 11px !important;
+}
+
+/* For browsers that don't support :has() */
+pre code.language-dirtree {
+  line-height: 1.2 !important;
+  font-size: 11px !important;
+}
