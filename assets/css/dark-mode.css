@@ -1,17 +1,21 @@
 /* Auto Dark Mode Support */
 @media (prefers-color-scheme: dark) {
   body {
-    background: #0d1117 none !important;
+    background: #0a0e14 !important;
+    background: linear-gradient(#0a0e14, #0d1117) fixed !important;
     color: #c9d1d9 !important;
   }
 
   .wrapper {
-    background: #0d1117 none !important;
+    background: #0d1117 !important;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 0 0 1px, rgba(0, 0, 0, 0.75) 0 3px 10px !important;
   }
 
   header {
-    background: #1a2332 none !important;
+    background: #1e3a5f !important;
+    background: linear-gradient(#2a4a70, #1e3a5f) !important;
     border-bottom: 1px solid #30363d !important;
+    border-radius: 8px 8px 0 0 !important;
   }
 
   header h1 {
@@ -32,8 +36,10 @@
   }
 
   section {
-    background: #0d1117 none !important;
+    background: #0d1117 !important;
+    background: linear-gradient(#0d1117, #0a0e14 700px) !important;
     color: #c9d1d9 !important;
+    border-top: 1px solid #21262d !important;
   }
 
   section h1, section h2, section h3, section h4, section h5, section h6 {
@@ -72,8 +78,8 @@
   }
 
   footer {
-    background-color: #161b22 !important;
-    border-top: 1px solid #30363d !important;
+    background: #0a0e14 !important;
+    border-top: 1px solid #21262d !important;
     color: #8b949e !important;
   }
 
