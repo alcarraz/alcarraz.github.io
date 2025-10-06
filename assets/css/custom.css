@@ -61,15 +61,15 @@ pre code.language-dirtree {
 
 @media print, screen and (max-width: 925px) {
   .wrapper {
-    border-radius: 8px;
     width: 740px;
   }
 }
 
 
 @media print, screen and (max-width: 740px) {
-  .wrapper {
-    /*border-radius: 0px;*/
+  .wrapper, header{
+    border-radius: 0;
     width: 100%
   }
+  
 }
