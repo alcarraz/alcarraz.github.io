@@ -15,6 +15,55 @@ header h1 {
   font-weight: 600;
 }
 
+/* Social links styling - curved around circle (130px diameter, 65px radius) */
+div.social-links {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 200;
+  text-align: right;
+}
+
+div.social-links a {
+  text-decoration: none;
+  font-size: 11px;
+  display: block;
+  padding: 3px 8px;
+  line-height: 1.2;
+  border-radius: 3px;
+  transition: opacity 0.2s;
+  position: absolute;
+  white-space: nowrap;
+}
+
+div.social-links a:hover {
+  opacity: 0.7;
+}
+
+/* Position each link's RIGHT EDGE close to circle, following the curve slightly */
+
+div.social-links a.stackoverflow {
+  /* Stack Overflow - top */
+  top: 20px;
+  right: 130px;
+}
+
+div.social-links a.linkedin {
+  /* LinkedIn - middle (closest point) */
+  top: 40px;
+  right: 145px;
+}
+
+div.social-links a.github {
+  /* GitHub - bottom */
+  top: 60px;
+  right: 153px;
+}
+
+header {
+  position: relative;
+}
+
 /* Section heading styling */
 section h1, section h2, section h3, section h4, section h5, section h6 {
   font-weight: 600;
