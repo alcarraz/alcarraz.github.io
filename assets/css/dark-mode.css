@@ -133,4 +133,38 @@
   hr {
     border-color: #30363d !important;
   }
+
+  /* Social links dark mode styling */
+  div.social-links a {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
+  }
+
+  div.social-links a:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4) !important;
+  }
+
+  /* Softer brand colors for dark mode */
+  div.social-links a.stackoverflow {
+    background: #F48024 !important;
+  }
+
+  div.social-links a.stackoverflow:hover {
+    background: #ff914d !important;
+  }
+
+  div.social-links a.linkedin {
+    background: #0A66C2 !important;
+  }
+
+  div.social-links a.linkedin:hover {
+    background: #0c7ce6 !important;
+  }
+
+  div.social-links a.github {
+    background: #444 !important;
+  }
+
+  div.social-links a.github:hover {
+    background: #555 !important;
+  }
 }
