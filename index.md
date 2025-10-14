@@ -46,3 +46,4 @@ In particular,
 I'm thinking about offering some free sessions to help you solve problems with jPOS-based projects,
 If you're interested, please, drop me a message on LinkedIn or by mail. 
 
+put 

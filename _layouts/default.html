@@ -35,6 +35,7 @@
             <a href="mailto:alcarraz+blog@gmail.com" class="email">Email</a>
         </div>
     </header>
+
     <section>
 
         {{ content }}
@@ -52,6 +53,23 @@
         {% endif %}
 
     </section>
+
+    <aside class="sidebar">
+        <nav class="site-nav">
+            <h3>Navigation</h3>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li>
+                    <span>Blog Posts</span>
+                    <ul>
+                        {% for post in site.posts limit:10 %}
+                        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </aside>
 </div>
 {% if site.github.is_project_page %}
 <footer>

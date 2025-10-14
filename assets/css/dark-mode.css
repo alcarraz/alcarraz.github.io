@@ -175,4 +175,26 @@
   div.social-links a.email:hover {
     background: #ff5242 !important;
   }
+
+  /* Sidebar dark mode */
+  .sidebar {
+    background: #161b22 !important;
+    border-left-color: #30363d !important;
+  }
+
+  .sidebar .site-nav h3 {
+    color: #f0f6fc !important;
+  }
+
+  .sidebar .site-nav > ul > li > span {
+    color: #c9d1d9 !important;
+  }
+
+  .sidebar .site-nav a {
+    color: #58a6ff !important;
+  }
+
+  .sidebar .site-nav a:hover {
+    color: #79c0ff !important;
+  }
 }

@@ -1,14 +1,106 @@
 /* Custom styles - layout and typography (theme-independent) */
 
-/* Wrapper styling */
-.wrapper {
-  box-shadow: rgba(0, 0, 0, 0.2) 0 0 0 1px, rgba(0, 0, 0, 0.45) 0 3px 10px;
-  width: 80%;
+/* Wrapper styling - apply flexbox only on larger screens */
+@media print, screen and (min-width: 926px) {
+  .wrapper {
+    box-shadow: rgba(0, 0, 0, 0.2) 0 0 0 1px, rgba(0, 0, 0, 0.45) 0 3px 10px !important;
+    width: 80% !important;
+    max-width: 1200px;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    align-items: stretch !important;
+  }
+
+  /* Header styling */
+  header {
+    border-radius: 8px 8px 0 0 !important;
+    width: 100% !important;
+    flex: 0 0 100% !important;
+    height: 80px !important;
+    position: relative !important;
+    overflow: visible !important;
+    padding: 15px 20px !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Ensure photo floats properly */
+  header img {
+    float: right !important;
+    margin-left: 20px !important;
+  }
+  /* Section styling */
+  section {
+    flex: 0 0 calc(100% - 220px) !important;
+    order: 1 !important;
+    width: calc(100% - 220px) !important;
+    float: none !important;
+    position: relative !important;
+    display: block !important;
+    border-radius: 0 0 0 8px !important;
+    box-sizing: border-box !important;
+  }
 }
 
-/* Header styling */
-header {
-  border-radius: 8px 8px 0 0;
+/* Sidebar styling */
+.sidebar {
+  width: 220px;
+  flex: 0 0 220px;
+  padding: 50px 20px 20px;
+  border-left: 1px solid #e5e5e5;
+  /*border-top: 1px solid #fff;*/
+  background: #f8f8f8;
+  order: 2;
+  box-sizing: border-box;
+  float: none !important;
+  position: relative !important;
+  display: block !important;
+  border-radius: 0 0 8px 0 !important;
+}
+
+.sidebar .site-nav h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+}
+
+.sidebar .site-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar .site-nav > ul > li {
+  margin-bottom: 10px;
+}
+
+.sidebar .site-nav > ul > li > span {
+  font-weight: 600;
+  font-size: 14px;
+  color: #444;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.sidebar .site-nav ul ul {
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.sidebar .site-nav ul ul li {
+  margin-bottom: 5px;
+}
+
+.sidebar .site-nav a {
+  color: #267CB9;
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.sidebar .site-nav a:hover {
+  text-decoration: underline;
 }
 
 header h1 {
@@ -120,10 +212,6 @@ div.social-links a.email:hover {
   background: #d33426;
 }
 
-header {
-  position: relative;
-}
-
 /* Section heading styling */
 section h1, section h2, section h3, section h4, section h5, section h6 {
   font-weight: 600;
@@ -172,6 +260,14 @@ pre code.language-dirtree {
   .wrapper {
     width: 740px;
   }
+
+  /*.sidebar {*/
+  /*  display: none;*/
+  /*}*/
+
+  /*section {*/
+  /*  flex: 0 0 100%;*/
+  /*}*/
 }
 
 
@@ -180,5 +276,12 @@ pre code.language-dirtree {
     border-radius: 0;
     width: 100%
   }
-  
+
+  /*.sidebar {*/
+  /*  display: none;*/
+  /*}*/
+
+  /*section {*/
+  /*  flex: 0 0 100%;*/
+  /*}*/
 }
