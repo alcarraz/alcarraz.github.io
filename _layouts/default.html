@@ -21,8 +21,18 @@
     {% include head-custom.html %}
 </head>
 <body>
+<!-- Hamburger menu toggle (hidden checkbox) -->
+<input type="checkbox" id="nav-toggle" class="nav-toggle" />
+
 <div class="wrapper">
     <header {% unless site.description or site.github.project_tagline %} class="without-description" {% endunless %} >
+        <!-- Hamburger menu button (visible only on small screens) -->
+        <label for="nav-toggle" class="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
         <img src="{{site.photo}}" style="float:right; border-radius: 50%; height:130px; z-index:100; position:relative" />
         <h1>{{ site.title | default: site.github.repository_name }}</h1>
         {% if site.description or site.github.project_tagline %}
@@ -55,6 +65,9 @@
     </section>
 
     <aside class="sidebar">
+        <!-- Close button for mobile -->
+        <label for="nav-toggle" class="sidebar-close">&times;</label>
+
         <nav class="site-nav">
             <h3>Navigation</h3>
             <ul>
@@ -70,6 +83,9 @@
             </ul>
         </nav>
     </aside>
+
+    <!-- Backdrop overlay for mobile menu -->
+    <label for="nav-toggle" class="sidebar-backdrop"></label>
 </div>
 {% if site.github.is_project_page %}
 <footer>
