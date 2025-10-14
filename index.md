@@ -37,12 +37,12 @@ Feel free to reach out:
 - **GitHub**: [github.com/alcarraz](https://github.com/alcarraz)
 - **LinkedIn**: [linkedin.com/in/alcarraz](https://linkedin.com/in/alcarraz)
 - **Stack Overflow**: [stackoverflow.com/users/3444205](https://stackoverflow.com/users/3444205)
-- **Email**: <a href="mailto:alcarraz+blog@gmail.com"><img src="/img/email.svg" alt="alcarraz@gmail.com" style="vertical-align: text-bottom; display: inline;"></a>
+- **Email**: <a href="mailto:alcarraz+blog@gmail.com"><img src="/img/email.svg" style="vertical-align: text-bottom; display: inline;"></a>.
 
 Whether you're looking to collaborate on open source projects,
-need help with jPOS, or just want to connect, I'd love to hear
+need help with jPOS, or just want to connect, I’d love to hear
 from you.
 In particular,
-I'm thinking about offering some free sessions to help you solve problems with jPOS based projects,
-If you are interested, please, drop me a message on LinkedIn or by mail. 
+I'm thinking about offering some free sessions to help you solve problems with jPOS-based projects,
+If you're interested, please, drop me a message on LinkedIn or by mail. 
 
