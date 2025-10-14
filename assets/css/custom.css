@@ -30,12 +30,12 @@ div.social-links {
 
 div.social-links a {
   text-decoration: none;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 500;
   display: inline-block;
-  padding: 6px 12px 6px 32px;
-  line-height: 1.3;
-  border-radius: 20px;
+  padding: 4px 10px 4px 28px;
+  line-height: 1.2;
+  border-radius: 16px;
   position: absolute;
   white-space: nowrap;
   transition: all 0.2s ease;
@@ -47,7 +47,7 @@ div.social-links a::before {
   font-family: "Font Awesome 6 Brands", serif;
   font-weight: 400;
   position: absolute;
-  left: 10px;
+  left: 8px;
   top: 50%;
   transform: translateY(-50%);
   font-size: 14px;
@@ -76,7 +76,7 @@ div.social-links a.stackoverflow:hover {
 /* LinkedIn - Brand color and icon */
 div.social-links a.linkedin {
   background: #0077B5;
-  top: 36px;
+  top: 28px;
   right: 161px; /* Stack Overflow width ~142px, LinkedIn ~100px, diff ~42px, so 130+42=172 */
 }
 
@@ -91,7 +91,7 @@ div.social-links a.linkedin:hover {
 /* GitHub - Brand color and icon */
 div.social-links a.github {
   background: #333;
-  top: 68px;
+  top: 52px;
   right: 166px; /* Stack Overflow width ~142px, GitHub ~90px, diff ~52px, so 130+52=182 */
 }
 
@@ -101,6 +101,23 @@ div.social-links a.github::before {
 
 div.social-links a.github:hover {
   background: #24292e;
+}
+
+/* Email - Brand color and icon */
+div.social-links a.email {
+  background: #EA4335;
+  top: 76px;
+  right: 173px;
+}
+
+div.social-links a.email::before {
+  content: "\f199"; /* fa-envelope-open */
+  font-family: "Font Awesome 6 Free", serif;
+  font-weight: 900;
+}
+
+div.social-links a.email:hover {
+  background: #d33426;
 }
 
 header {

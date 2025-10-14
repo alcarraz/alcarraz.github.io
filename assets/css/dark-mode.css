@@ -167,4 +167,12 @@
   div.social-links a.github:hover {
     background: #555 !important;
   }
+
+  div.social-links a.email {
+    background: #EA4335 !important;
+  }
+
+  div.social-links a.email:hover {
+    background: #ff5242 !important;
+  }
 }
