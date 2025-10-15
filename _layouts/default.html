@@ -72,14 +72,29 @@
             <h3>Navigation</h3>
             <ul>
                 <li><a href="/">Home</a></li>
-                <li>
-                    <span>Blog Posts</span>
-                    <ul>
-                        {% for post in site.posts limit:10 %}
-                        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-                        {% endfor %}
-                    </ul>
-                </li>
+            </ul>
+
+            <h3>Blog Archive</h3>
+            {% assign postsByYearMonth = site.posts | group_by_exp: "post", "post.date | date: '%Y-%m'" %}
+            <ul class="blog-archive">
+                {% for year_month in postsByYearMonth %}
+                    {% assign year = year_month.name | slice: 0, 4 %}
+                    {% assign month_num = year_month.name | slice: 5, 2 %}
+                    {% assign month_date = year_month.name | append: "-01" | date: "%B" %}
+                    <li>
+                        <details open>
+                            <summary>{{ month_date }} {{ year }} ({{ year_month.items | size }})</summary>
+                            <ul>
+                                {% for post in year_month.items %}
+                                <li>
+                                    <a href="{{ post.url }}">{{ post.title }}</a>
+                                    <span class="post-date">{{ post.date | date: "%b %d" }}</span>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </details>
+                    </li>
+                {% endfor %}
             </ul>
         </nav>
     </aside>
