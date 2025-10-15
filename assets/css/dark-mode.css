@@ -146,34 +146,42 @@
   /* Softer brand colors for dark mode */
   div.social-links a.stackoverflow {
     background: #F48024 !important;
+    color: #000 !important;
   }
 
   div.social-links a.stackoverflow:hover {
     background: #ff914d !important;
+    color: #000 !important;
   }
 
   div.social-links a.linkedin {
     background: #0A66C2 !important;
+    color: #fff !important;
   }
 
   div.social-links a.linkedin:hover {
     background: #0c7ce6 !important;
+    color: #fff !important;
   }
 
   div.social-links a.github {
     background: #444 !important;
+    color: #fff !important;
   }
 
   div.social-links a.github:hover {
     background: #555 !important;
+    color: #fff !important;
   }
 
   div.social-links a.email {
     background: #EA4335 !important;
+    color: #fff !important;
   }
 
   div.social-links a.email:hover {
     background: #ff5242 !important;
+    color: #fff !important;
   }
 
   /* Sidebar dark mode */

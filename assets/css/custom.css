@@ -144,7 +144,7 @@ div.social-links {
 div.social-links a {
   text-decoration: none;
   font-size: 11px;
-  font-weight: 500;
+  font-weight: 700;
   display: inline-block;
   padding: 4px 10px 4px 28px;
   line-height: 1.2;
@@ -163,7 +163,7 @@ div.social-links a::before {
   left: 8px;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 14px;
+  font-size: 16px;
 }
 
 div.social-links a:hover {
@@ -174,6 +174,7 @@ div.social-links a:hover {
 /* Stack Overflow - Brand color and icon (widest, use as reference) */
 div.social-links a.stackoverflow {
   background: #F48024;
+  color: #000;
   top: 4px;
   right: 126px;
 }
@@ -184,6 +185,7 @@ div.social-links a.stackoverflow::before {
 
 div.social-links a.stackoverflow:hover {
   background: #e47118;
+  color: #000;
 }
 
 /* LinkedIn - Brand color and icon */
