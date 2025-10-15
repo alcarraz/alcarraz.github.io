@@ -188,6 +188,7 @@
   .sidebar {
     background: #161b22 !important;
     border-left-color: #30363d !important;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5) !important;
   }
 
   .sidebar .site-nav h3 {
@@ -199,27 +200,19 @@
   }
 
   .sidebar .site-nav a {
-    color: #58a6ff !important;
+    color: #79c0ff !important;
   }
 
   .sidebar .site-nav a:hover {
-    color: #79c0ff !important;
+    color: #a5d6ff !important;
+  }
+
+  .sidebar-close {
+    color: #c9d1d9 !important;
   }
 
   /* Hamburger menu dark mode */
   .hamburger-menu span {
     background: #58a6ff !important;
-  }
-
-  /* Mobile sidebar dark mode */
-  @media print, screen and (max-width: 925px) {
-    .sidebar {
-      background: #161b22 !important;
-      box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5) !important;
-    }
-
-    .sidebar-close {
-      color: #c9d1d9 !important;
-    }
   }
 }

@@ -116,6 +116,7 @@ section {
   text-decoration: none;
   font-size: 13px;
   line-height: 1.4;
+  font-weight: 600;
 }
 
 .sidebar .site-nav a:hover {
