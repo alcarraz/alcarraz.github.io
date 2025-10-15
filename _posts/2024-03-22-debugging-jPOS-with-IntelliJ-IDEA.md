@@ -214,7 +214,7 @@ To test the debug configuration, we are going to set a breakpoint in jPOS code, 
 
 The debugger should stop at that method, and that’s it. Happy debugging.
  
-If you'd like me to cover other jPOS related stuff, let me know, you can contact me at [<img src="/img/linkedin.svg" width="16" style="vertical-align:middle">/andresalcarraz](https://linkedin.com/in/andresalcarraz) or [<img src="/img/twitter.svg" width="16" style="vertical-align:middle">/andresalcarraz](https://twitter.com/andresalcarraz).
+If you'd like me to cover other jPOS related stuff, let me know, you can contact me at [<img src="/img/linkedin.svg" width="16" style="vertical-align:middle">/andresalcarraz](https://linkedin.com/in/andresalcarraz) or [X/andresalcarraz](https://twitter.com/andresalcarraz).
 
 Head over to [jPOS tutorials](http://www.jpos.org/tutorials) for awesome tutorials from which you can experiment (and debug).
 

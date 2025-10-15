@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="16" style="vertical-align: middle;">
+  <style>
+    @media (prefers-color-scheme: dark) {
+      text { fill: #58a6ff; }
+    }
+    @media (prefers-color-scheme: light) {
+      text { fill: #267CB9; }
+    }
+  </style>
+  <text x="0" y="12" font-family="Arial, sans-serif" font-size="14">alcarraz@gmail.com</text>
+</svg>
