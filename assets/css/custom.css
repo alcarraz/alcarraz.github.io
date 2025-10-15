@@ -124,6 +124,8 @@ section {
 
 header h1 {
   font-weight: 600;
+  max-width: calc(100% - 225px);
+  word-wrap: break-word;
 }
 
 header p {
@@ -298,19 +300,7 @@ pre code.language-dirtree {
   }
 
 }
-
-/* Mobile styles for screens 740px and smaller - Hamburger menu */
 @media print, screen and (max-width: 740px) {
-  .wrapper {
-    border-radius: 0;
-    width: 100%;
-  }
-
-  header {
-    border-radius: 0;
-  }
-
-  /* Show hamburger menu button */
   .hamburger-menu {
     display: flex;
     flex-direction: column;
@@ -352,21 +342,25 @@ pre code.language-dirtree {
   /* Sidebar - hidden by default on mobile */
   .sidebar {
     position: fixed !important;
-    top: 0;
-    right: -280px; /* Hide off-screen to the right */
+    top: 0 !important;
+    right: -280px !important;
     width: 280px !important;
-    height: 100vh;
-    background: #f8f8f8;
-    overflow-y: auto;
-    transition: right 0.3s ease;
-    z-index: 999;
+    height: 100vh !important;
+    background: #f8f8f8 !important;
+    overflow-y: auto !important;
+    transition: right 0.3s ease !important;
+    z-index: 999 !important;
     padding: 60px 20px 20px !important;
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1) !important;
+    flex: none !important;
+    order: unset !important;
+    border-radius: 0 !important;
+    border-left: none !important;
   }
 
   /* Slide sidebar in when checkbox is checked */
   .nav-toggle:checked ~ .wrapper .sidebar {
-    right: 0;
+    right: 0 !important;
   }
 
   /* Show backdrop when menu is open */
@@ -400,6 +394,60 @@ pre code.language-dirtree {
   /* Full width section on mobile */
   section {
     width: 100% !important;
-    flex: 0 0 100% !important;
+    flex: none !important;
+    order: unset !important;
+    border-radius: 0 0 8px 8px !important;
   }
+  /* Title beside hamburger */
+  header h1 {
+    padding-left: 50px;
+    padding-bottom: 5px;
+  }
+
+}
+/* Mobile styles for screens 401-740px - Hamburger menu */
+@media print, screen and (min-width: 488px) and (max-width: 740px) {
+  .wrapper {
+    border-radius: 0;
+    width: 100%;
+  }
+
+  header {
+    border-radius: 0;
+    height: auto !important;
+    overflow: visible !important;
+    position: relative !important;
+  }
+}
+
+/* Very small devices (≤400px) - Text below photo and social links */
+@media print, screen and (max-width: 487px) {
+  .wrapper {
+    border-radius: 0;
+    width: 100%;
+  }
+
+  header {
+    border-radius: 0;
+    height: auto !important;
+    overflow: visible !important;
+    position: relative !important;
+  }
+
+  /* Description below title */
+  header p {
+    padding-left: 0;
+    padding-right: 10px;
+    width: calc(100% - 20px);
+    margin: 5px 0 0 0;
+    font-size: 12px;
+  }
+
+  /*below hamburger*/
+  header h1 {
+    padding-left: 0;
+    padding-top: 40px;
+    padding-bottom: 5px;
+  }
+  
 }
