@@ -44,4 +44,6 @@ need help with jPOS, or just want to connect, I’d love to hear
 from you.
 In particular,
 I'm thinking about offering some free sessions to help you solve problems with jPOS-based projects,
-If you're interested, please, drop me a message on LinkedIn or by mail. 
+If you're interested, please,
+drop me a message on [Linked<img src="/img/linkedin.svg" style="vertical-align: text-bottom; display: inline; height: 1em;">](https://www.linkedin.com/in/andresalcarraz/)
+or by [email](mailto:alcarraz+blog@gmail.com). 
