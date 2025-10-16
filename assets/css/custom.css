@@ -69,6 +69,7 @@ section {
   padding: 50px 20px 20px;
   border-left: 1px solid #e5e5e5;
   background: #f8f8f8;
+  background: linear-gradient(#f8f8f8, #e0e0e0);
   order: 2;
   box-sizing: border-box;
   float: none;
