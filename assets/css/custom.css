@@ -20,11 +20,19 @@
   display: none;
 }
 
+header p {
+  margin: 8px;
+}
+
+section p {
+  margin: 10px 10px 20px
+}
+
 /* Wrapper styling - apply flexbox only on larger screens */
-@media print, screen and (min-width: 925px) {
+@media print, screen and (min-width: 985px) {
   .wrapper {
     box-shadow: rgba(0, 0, 0, 0.2) 0 0 0 1px, rgba(0, 0, 0, 0.45) 0 3px 10px;
-    width: 80%;
+    width: 75%;
     /*max-width: 1200px;*/
     display: flex;
     flex-wrap: wrap;
@@ -346,7 +354,7 @@ pre code.language-dirtree {
 }
 
 /* Medium screens (741px - 925px) - Desktop-like layout with static sidebar */
-@media print, screen and (min-width: 741px) and (max-width: 924px) {
+@media print, screen and (min-width: 741px) and (max-width: 985px) {
   .wrapper {
     width: 740px;
     display: flex;
