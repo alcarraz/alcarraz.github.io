@@ -74,7 +74,7 @@ section {
 .sidebar {
   width: 220px;
   flex: 0 0 220px;
-  padding: 50px 20px 20px;
+  padding: 75px 20px 20px;
   border-left: 1px solid #e5e5e5;
   background: #f8f8f8;
   background: linear-gradient(#f8f8f8, #e0e0e0);
@@ -217,14 +217,14 @@ div.social-links {
 
 div.social-links a {
   text-decoration: none;
-  font-size: 11px;
-  font-weight: 700;
-  display: inline-block;
-  padding: 4px 10px 4px 28px;
-  line-height: 1.2;
-  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border-radius: 50%;
   position: absolute;
-  white-space: nowrap;
   transition: all 0.2s ease;
   color: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -233,11 +233,8 @@ div.social-links a {
 div.social-links a::before {
   font-family: "Font Awesome 6 Brands", serif;
   font-weight: 400;
-  position: absolute;
-  left: 8px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 16px;
+  position: relative;
+  font-size: 18px;
 }
 
 div.social-links a:hover {
@@ -245,12 +242,12 @@ div.social-links a:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
-/* Stack Overflow - Brand color and icon (widest, use as reference) */
+/* Stack Overflow - Brand color and icon (upper-left, 135° angle) */
 div.social-links a.stackoverflow {
   background: #F48024;
   color: #000;
-  top: 4px;
-  right: 126px;
+  top: 2px;
+  right: 156px;
 }
 
 div.social-links a.stackoverflow::before {
@@ -262,11 +259,11 @@ div.social-links a.stackoverflow:hover {
   color: #000;
 }
 
-/* LinkedIn - Brand color and icon */
+/* LinkedIn - Brand color and icon (left, 165° angle) */
 div.social-links a.linkedin {
   background: #0077B5;
-  top: 28px;
-  right: 161px; /* Stack Overflow width ~142px, LinkedIn ~100px, diff ~42px, so 130+42=172 */
+  top: 42px;
+  right: 182px;
 }
 
 div.social-links a.linkedin::before {
@@ -277,26 +274,28 @@ div.social-links a.linkedin:hover {
   background: #006399;
 }
 
-/* GitHub - Brand color and icon */
+/* GitHub - Brand color and icon (upper-right, 45° angle) */
 div.social-links a.github {
-  background: #333;
-  top: 52px;
-  right: 166px; /* Stack Overflow width ~142px, GitHub ~90px, diff ~52px, so 130+52=182 */
+  /*background: #333;*/
+  top: 2px;
+  right: 28px;
+  color: #444;
 }
 
 div.social-links a.github::before {
   content: "\f09b"; /* fa-github */
+  font-size: 38px;
 }
 
 div.social-links a.github:hover {
-  background: #24292e;
+  /*background: #24292e;*/
 }
 
-/* Email - Brand color and icon */
+/* Email - Brand color and icon (right, 15° angle) */
 div.social-links a.email {
   background: #EA4335;
-  top: 76px;
-  right: 173px;
+  top: 42px;
+  right: 2px;
 }
 
 div.social-links a.email::before {

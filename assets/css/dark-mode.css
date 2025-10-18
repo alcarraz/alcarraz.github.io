@@ -165,13 +165,17 @@
   }
 
   div.social-links a.github {
-    background: #444;
-    color: #fff;
+    /*background: #ffffff;*/
+    color: white;
+  }
+
+  div.social-links a.github::before {
+    color: white;
   }
 
   div.social-links a.github:hover {
-    background: #555;
-    color: #fff;
+    /*background: #f0f0f0;*/
+    color: white;
   }
 
   div.social-links a.email {
