@@ -21,7 +21,9 @@
 }
 
 header p {
-  margin: 8px;
+  margin: 8px 0 0;
+  width: calc(100% - 225px);
+  font-weight: bolder;
 }
 
 section p {
@@ -200,10 +202,6 @@ header h1 {
   font-weight: 600;
   max-width: calc(100% - 225px);
   word-wrap: break-word;
-}
-
-header p {
-  width: calc(100% - 225px);
 }
 
 /* Social links styling - curved around circle (130px diameter, 65px radius) */
@@ -514,7 +512,6 @@ pre code.language-dirtree {
   header p {
     padding-left: 0;
     padding-right: 10px;
-    width: calc(100% - 20px);
     margin: 5px 0 0 0;
     font-size: 12px;
   }
