@@ -11,6 +11,7 @@ photo: /img/andres.png
 
 plugins:
   - jekyll-remote-theme
+  - jekyll-feed
 
 # _config.yml
 defaults:
