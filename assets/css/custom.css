@@ -349,7 +349,6 @@ code.language-dirtree, pre:has(code.language-dirtree),
 pre code.language-dirtree {
   line-height: 1.1;
 }
-
 /* Medium screens (741px - 925px) - Desktop-like layout with static sidebar */
 @media print, screen and (min-width: 741px) and (max-width: 985px) {
   .wrapper {
@@ -491,6 +490,10 @@ pre code.language-dirtree {
     overflow: visible;
     position: relative;
   }
+  
+  section {
+    padding-top: 40px;
+  }
 }
 
 /* Very small devices (≤400px) - Text below photo and social links */
@@ -522,5 +525,4 @@ pre code.language-dirtree {
     padding-top: 40px;
     padding-bottom: 5px;
   }
-  
 }
