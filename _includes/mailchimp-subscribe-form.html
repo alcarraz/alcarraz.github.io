@@ -1,0 +1,41 @@
+{% comment %}
+Reusable Mailchimp subscription form
+Usage:
+  {% include mailchimp-subscribe-form.html layout="sidebar" %}
+  {% include mailchimp-subscribe-form.html layout="footer" %}
+{% endcomment %}
+
+<form action="https://{{ site.mailchimp.subdomain }}.{{ site.mailchimp.datacenter }}.list-manage.com/subscribe/post?u={{ site.mailchimp.user_id }}&id={{ site.mailchimp.audience_id }}&f_id={{ site.mailchimp.form_id }}"
+      method="post"
+      class="mailchimp-form mailchimp-form--{{ include.layout }}"
+      target="_blank">
+  <div class="mailchimp-form__fields">
+    <input type="text"
+           name="FNAME"
+           class="mailchimp-form__input mailchimp-form__input--name"
+           placeholder="Your first name (optional)">
+
+    <div class="mailchimp-form__email-row">
+      <input type="email"
+             name="EMAIL"
+             class="mailchimp-form__input mailchimp-form__input--email"
+             required
+             placeholder="Your email address">
+
+      <input type="submit"
+             class="mailchimp-form__button"
+             value="Subscribe">
+    </div>
+  </div>
+
+  <input type="hidden" name="tags" value="7492086">
+
+  <div class="mailchimp-form__responses">
+    <div class="mailchimp-form__response mailchimp-form__response--error"></div>
+    <div class="mailchimp-form__response mailchimp-form__response--success"></div>
+  </div>
+
+  <div class="mailchimp-form__bot-field">
+    <input type="text" name="b_{{ site.mailchimp.user_id }}_{{ site.mailchimp.audience_id }}" tabindex="-1" value="">
+  </div>
+</form>

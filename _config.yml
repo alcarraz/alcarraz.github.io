@@ -13,6 +13,14 @@ plugins:
   - jekyll-remote-theme
   - jekyll-feed
 
+# Mailchimp configuration
+mailchimp:
+  datacenter: "us7"
+  user_id: "716182c58440cfff87dc0b1fb"
+  audience_id: "3f2fbcbfa9"
+  form_id: "00c433e0f0"
+  subdomain: "github"
+
 # _config.yml
 defaults:
   - scope:

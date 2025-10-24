@@ -232,4 +232,51 @@
   .sidebar .blog-archive .post-date {
     color: #8b949e;
   }
+
+  /* Mailchimp form dark mode */
+  .mailchimp-form__input {
+    background-color: #0d1117;
+    border-color: #30363d;
+    color: #c9d1d9;
+  }
+
+  .mailchimp-form__input::placeholder {
+    color: #8b949e;
+  }
+
+  .mailchimp-form__input:focus {
+    border-color: #58a6ff;
+    box-shadow: 0 0 0 3px rgba(88, 166, 255, 0.3);
+  }
+
+  .mailchimp-form__button {
+    background-color: #238636;
+    color: #ffffff;
+  }
+
+  .mailchimp-form__button:hover {
+    background-color: #2ea043;
+  }
+
+  .mailchimp-form__button:active {
+    background-color: #1f7a2e;
+  }
+
+  /* Newsletter box dark mode */
+  .newsletter-separator {
+    border-color: #30363d;
+  }
+
+  .newsletter-box {
+    background-color: #161b22;
+    border: 1px solid #30363d;
+  }
+
+  .newsletter-box__title {
+    color: #f0f6fc;
+  }
+
+  .newsletter-box__description {
+    color: #c9d1d9;
+  }
 }

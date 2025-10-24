@@ -50,6 +50,16 @@
 
         {{ content }}
 
+        {% if page.url != "/" and page.url contains ".html" %}
+        <!-- Newsletter signup for blog posts -->
+        <hr class="newsletter-separator">
+        <div class="newsletter-box">
+            <h3 class="newsletter-box__title">📬 Stay Updated</h3>
+            <p class="newsletter-box__description">Subscribe to get notified when I publish new posts about jPOS, software engineering, and open source.</p>
+            {% include mailchimp-subscribe-form.html layout="footer" %}
+        </div>
+        {% endif %}
+
         {% if page.url == "/" %}
         <h2>Blog Posts</h2>
         <ul>
@@ -74,6 +84,9 @@
                 <li><a href="/">Home</a></li>
                 <li><a href="/feed.xml" target="_blank"><i class="fas fa-rss"></i> RSS Feed</a></li>
             </ul>
+
+            <h3>Subscribe</h3>
+            {% include mailchimp-subscribe-form.html layout="sidebar" %}
 
             <h3>Blog Archive</h3>
             {% assign postsByYearMonth = site.posts | group_by_exp: "post", "post.date | date: '%Y-%m'" %}

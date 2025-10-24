@@ -526,3 +526,123 @@ pre code.language-dirtree {
     padding-bottom: 5px;
   }
 }
+
+/* Mailchimp subscription form styles */
+.mailchimp-form {
+  margin: 0;
+}
+
+.mailchimp-form__fields {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mailchimp-form__input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.mailchimp-form__input:focus {
+  outline: none;
+  border-color: #0366d6;
+  box-shadow: 0 0 0 3px rgba(3, 102, 214, 0.1);
+}
+
+.mailchimp-form__button {
+  padding: 10px;
+  background-color: #0366d6;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+  box-sizing: border-box;
+}
+
+.mailchimp-form__button:hover {
+  background-color: #0256c2;
+}
+
+.mailchimp-form__button:active {
+  background-color: #024ba6;
+}
+
+.mailchimp-form__responses {
+  display: none;
+}
+
+.mailchimp-form__bot-field {
+  position: absolute;
+  left: -5000px;
+}
+
+/* Sidebar layout - stacked vertical */
+.mailchimp-form--sidebar .mailchimp-form__input {
+  width: 100%;
+}
+
+.mailchimp-form--sidebar .mailchimp-form__email-row {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mailchimp-form--sidebar .mailchimp-form__button {
+  width: 100%;
+}
+
+/* Footer layout - name on top, email + button inline */
+.mailchimp-form--footer {
+  margin-top: 15px;
+}
+
+.mailchimp-form--footer .mailchimp-form__input--name {
+  width: 100%;
+  padding: 10px;
+}
+
+.mailchimp-form--footer .mailchimp-form__input--email {
+  padding: 10px;
+}
+
+.mailchimp-form--footer .mailchimp-form__email-row {
+  display: flex;
+  gap: 2%;
+}
+
+.mailchimp-form--footer .mailchimp-form__input--email {
+  flex: 1;
+}
+
+.mailchimp-form--footer .mailchimp-form__button {
+  flex: 0 0 28%;
+}
+
+/* Newsletter box styles */
+.newsletter-separator {
+  margin: 40px 0 30px 0;
+  border: 1px solid #e1e4e8;
+}
+
+.newsletter-box {
+  background-color: #f6f8fa;
+  padding: 20px;
+  border-radius: 6px;
+  margin: 30px 0;
+}
+
+.newsletter-box__title {
+  margin-top: 0;
+}
+
+.newsletter-box__description {
+  margin-bottom: 15px;
+}
